@@ -1,0 +1,179 @@
+@charset "ISO-8859-1";
+<!-- /*
+ * Gabriel Avinaz
+ * 5/29/2020
+ * Assignment 9.3
+ *
+ *Styling for the project
+ *still need to work on this aspect
+ * 
+ */ -->
+    body {
+    	background-color: azure;
+    	font-family: sans-serif; 
+    	}
+    .menuBox{
+    	width:500px;
+    	margin: 0 auto;
+
+    }
+    
+    .main{
+    	margin-top: 200px;
+    }
+    
+    .message {
+    	color: crimson;
+    	}
+
+    .headerBox{
+        background-color: #888;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+
+
+    .headerTitle{
+        color: #F7F7F7;
+        font-style: oblique;
+        font-size: 60px;
+        margin: auto;
+    }
+    
+    .entryForm, .menuBox {
+        border: 1px solid #ccc;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),  0 6px 6px rgba(0,0,0,0.23);
+        background-color: Gainsboro;
+        padding:30px; 
+
+    	}
+    
+    input {
+    	padding: 5px;
+    	}
+    
+    input[type=text]{
+    	height: 15px;
+    	width: 200px;
+    }
+
+    
+    
+    input[type=submit], .menuButton, .headerButton {
+    	background-color: BlueViolet;
+    	color: #F7F7F7;
+    	border: none;
+    	border-radius: 5px;
+    	padding: 12px;
+    	margin: 15px; 
+    	display: inline-block; 
+    	font: bold 15px Arial, sans-serif;
+    	}
+    	
+    input[type=submit]:hover, .menuButton:hover, .headerButton:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  	}
+  	@keyframes background-color {
+    	100% {
+    	  background-color: hsl(271, 76%, 70%);
+    	}
+  	}
+    
+    .menuBox{
+        text-align: center;
+        z-index: 100;
+    }
+
+    .menuButton, .headerButton{
+        width: 200px;
+    }
+
+    
+    .outputTable{
+    	width: 90%;
+    	background-color: moccasin;
+    	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),  0 6px 6px rgba(0,0,0,0.23);
+    }
+    	
+    h2{
+    	margin: auto;
+    	position: relative;
+    	left: 10px;
+    	padding: 10px;
+    }
+    
+    .closeLink {
+    position:absolute;
+    right: 0;
+    margin: 8px;
+    z-index: 99;
+	}	
+    
+    table {
+    	table-layout: fixed;
+    	width: 100%; 
+    	border-collapse: collapse; 
+    	font-family: Helvetica, Arial
+    }
+    
+    tr:nth-child(even) {
+    	background-color: #f2f2f2;
+    }
+    
+    th{
+    	text-align: left; 
+    	padding: 15px; 
+    	background-color: darkorange; 
+    	color: white;
+    	}
+    	
+    td{
+    	word-wrap: break-word;
+    }
+    
+    select, option{
+    	padding: 5px;
+    }
+    
+    textarea {
+  		width: 400px;
+  		height: 100px;
+	}
+	
+	.couponSheet{
+		display: inline-flex;
+		flex-flow: row wrap;
+	}
+	
+	.card {
+      	display: inline-block; 
+  		background-color: #bfcbf4;
+  		width: 200px;
+  		height: 300px;
+  		margin: 15px;
+  		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  		transition: 0.3s;
+  		padding: 8px;
+	}
+
+	.card:hover {
+  		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+	
+	.headerButton{
+	    border-radius: 0px !important;
+    	margin: 0px !important; 
+	}
+	
+	span{
+		margin-top: 3px;
+		margin-bottom: 3px;
+		font:  10px Arial, sans-serif;
+		text-align: justify;
+  		text-justify: inter-word;
+	}
